@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | Nor Consulting</title>
+<meta name="description" content="Contáctanos si necesitas ayuda con remuneraciones, cumplimiento laboral o gestión tributaria. Respondemos por WhatsApp, LinkedIn o email.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.svg" alt="Nor Consulting" width="34" height="34">
+      <span>NOR<br><small>Consulting</small></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contacto.html" class="btn btn-gold">Cotiza tu asesoría</a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumb"><a href="index.html" style="color:inherit">Inicio</a> / <span class="gold">Contacto</span></p>
+    <h1>Contáctanos si necesitas ayuda.</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid grid-2" style="align-items:flex-start; gap:48px;">
+
+    <div class="form-panel reveal">
+      <h2 style="font-size:22px;">Cuéntanos tu caso</h2>
+      <p style="margin-bottom:24px;">Respondemos dentro de 1 día hábil.</p>
+      <form id="contact-form">
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+        </div>
+        <div class="field">
+          <label for="empresa">Empresa</label>
+          <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="tucorreo@empresa.cl" required>
+        </div>
+        <div class="field">
+          <label for="servicio">¿En qué te podemos ayudar?</label>
+          <select id="servicio" name="servicio">
+            <option value="">Selecciona un servicio</option>
+            <option value="remuneraciones">Remuneraciones</option>
+            <option value="auditoria">Auditoría DT</option>
+            <option value="legal">Legal, contratos y prevención</option>
+            <option value="tributaria">Contabilidad y gestión tributaria</option>
+            <option value="plataformas">Plataformas y migración</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos brevemente tu situación"></textarea>
+        </div>
+        <button type="submit" class="btn btn-navy" style="width:100%;">Enviar mensaje</button>
+        <p class="form-note">Este formulario es una vista de demostración: aún no está conectado a un servidor de envío de correos.</p>
+        <div class="form-success">Gracias — tu mensaje quedó registrado. Te contactaremos pronto.</div>
+      </form>
+    </div>
+
+    <div class="reveal">
+      <div style="background:var(--navy); border-radius:var(--radius); padding:36px;">
+        <h3 style="color:var(--white); font-size:18px; margin-bottom:4px;">Otras formas de contacto</h3>
+        <p style="color:rgba(255,255,255,0.65); margin-bottom:8px; font-size:14px;">Elige el canal que más te acomode.</p>
+
+        <div class="contact-info-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></div>
+          <div><h4>Email</h4><p>contacto@norconsulting.cl</p></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <div><h4>WhatsApp</h4><p>+56 9 0000 0000</p></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M10 9h4v2a4 4 0 0 1 4-2c3 0 4 2 4 5v7h-4v-6c0-1-1-2-2-2s-2 1-2 2v6h-4z"/></svg></div>
+          <div><h4>LinkedIn</h4><p>Nor Consulting</p></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-8-6.5-8-12a8 8 0 0 1 16 0c0 5.5-8 12-8 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+          <div><h4>Ubicación</h4><p>Santiago, Chile</p></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <img src="assets/logo.svg" alt="Nor Consulting" width="30" height="30">
+          <span>NOR<br><small>Consulting</small></span>
+        </a>
+        <p>Consultoría laboral, legal y tributaria prolija, obsesionada con el detalle.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="servicios.html#remuneraciones">Remuneraciones</a></li>
+          <li><a href="servicios.html#legal">Legal y contratos</a></li>
+          <li><a href="servicios.html#tributaria">Contabilidad tributaria</a></li>
+          <li><a href="servicios.html#plataformas">Plataformas web</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:contacto@norconsulting.cl">contacto@norconsulting.cl</a></li>
+          <li><a href="tel:+56900000000">+56 9 0000 0000</a></li>
+          <li><a href="contacto.html">Agenda una reunión</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Nor Consulting. Todos los derechos reservados.</span>
+      <div class="social">
+        <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M10 9h4v2a4 4 0 0 1 4-2c3 0 4 2 4 5v7h-4v-6c0-1-1-2-2-2s-2 1-2 2v6h-4z"/></svg></a>
+        <a href="#" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
