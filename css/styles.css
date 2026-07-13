@@ -630,15 +630,20 @@ img{ max-width: 100%; display:block; }
   gap: 50px;
 }
 
-.hero-image {
-  flex: 1;
-}
-
-.hero-image img {
-  width: 100%;
-  max-width: 400px;
-}
-
 .hero-text {
   flex: 1;
+}
+
+modificaciones
+
+.hero-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
